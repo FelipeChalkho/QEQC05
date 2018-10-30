@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Iniciar Sesion";
+}
+
+<style>
+    body {
+        color: white;
+        background: #0D80B6;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 0;
+    }
+</style>
+
+<form action="@Url.Action("ValidarLogin", "Home")"method="post">
+    <h2>¿Con ganas de jugar?</h2>
+    <br>
+    <label for="Email">Ingrese su mail: </label>
+    <input type="email" name="Email"/>
+    <br><br>
+    <label for="Email">Ingrese su contraseña: </label>
+    <input type="password" name="Contraseña"/>
+    <br><br>
+    <input type="submit" name="submit" value="Iniciar sesion" />
+</form>
